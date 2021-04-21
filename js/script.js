@@ -11,7 +11,7 @@ const app = new Vue( {
         ],
 
         indexPhoto: 0,
-        IntervalID: 0,
+        intervalId: 0,
     },
 
     created() {
@@ -43,13 +43,13 @@ const app = new Vue( {
         },
 
         startLoop()  {
-            setInterval(() => {
+            this.intervalId = setInterval(() => {
                 this.nextPhoto();
             }, 4000);
         },
 
         stopLoop() {
-            clearInterval(this.IntervalID);
+            clearInterval(this.intervalId);
         }
 
         
