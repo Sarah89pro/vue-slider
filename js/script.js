@@ -13,6 +13,11 @@ const app = new Vue( {
         indexPhoto: 0,
     },
 
+    created() {
+        console.log(created);
+        this.startLoop();
+    },
+
     methods: {
         prevPhoto() {
             this.indexPhoto -= 1;
@@ -31,6 +36,17 @@ const app = new Vue( {
                 this.indexPhoto = 0;
             }
         },
+
+        setPhoto(index) {
+            console.log(index);
+            this.indexPhoto = index;
+        },
+
+        startLoop()  {
+            setInterval(() => {
+                this.nextPhoto();
+            }, 4000);
+        }
 
         
     }

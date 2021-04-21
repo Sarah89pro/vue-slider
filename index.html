@@ -64,6 +64,11 @@
                     <i class="fsas fa-circle"></i>
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-circle"></i>-->
+                    <i v-for="(photo, index) in photos"
+                    class="fas fa-circle"
+                    :class="{active: index == indexPhoto}"
+                    @click="setPhoto(index)"
+                    ></i>
                 </nav>
             </section>
     
