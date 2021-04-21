@@ -45,7 +45,10 @@
         <div id="app">
 
 
-            <section class="slider">
+            <section class="slider"
+            @mouseenter="stopLoop"
+            @mouseleave="startLoop"
+            >
                 <div class="prev" @click="prevPhoto">
                     <i class="fas fa-angle-double-left"></i>
                 </div>
