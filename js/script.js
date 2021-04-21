@@ -4,10 +4,10 @@ const app = new Vue( {
     el: "#app",
     data: {
         photos: [
-            "./img/Arroburghini.jpg",
-            "./img/FishBurger.jpg",
-            "./img/Club Sandwich.jpg",
-            "./img/Burger con salsa di mirtilli rossa.jpg",
+            "./img/img1.jpg",
+            "./img/img2.jpg",
+            "./img/img3.jpg",
+            "./img/img4.jpg",
         ],
 
         indexPhoto: 0,

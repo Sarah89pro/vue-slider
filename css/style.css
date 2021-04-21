@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: #f5d97e;
+    background: linear-gradient(#3A3A3A, #313131);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*UTILITY*/
-.flex {
+.flex-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,24 +24,25 @@ li {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #fff;
 }
 
 a:hover {
-    color: #f03861;
+    color: #940423;
 }
 
 
 
 /*HEADER*/
 .main-header {
-    padding-top: 10px;
-    height: 90px;
+    padding-top: 8px;
+    height: 100px;
     width: 100%;
     position:fixed;
-    background-color: #fff;
+    background-color: rgba(255, 175, 4, 0.822);
     z-index: 1;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .header-wrapper {
@@ -51,7 +52,7 @@ a:hover {
 
 .main-header ul li img {
     vertical-align: middle;
-    max-width: 80px;
+    max-width: 90px;
 }
 
 .main-header li {
@@ -69,16 +70,9 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 115px 20px;
-    max-width: 1050px;
-    margin: 25px auto;
-    
-  }
-
-.specials h1 {
-    margin-bottom: 20px;
-    color: #000000;
+    padding: 100px 20px;
 }
+
 /*APP*/
 
 /*Slider*/
@@ -87,15 +81,14 @@ a:hover {
 }
 
 .slider .images  {
-    
-    height: 500px;
+    height: 600px;
 }
 
 .slider .images img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    
+    object-fit: fill;
+    margin-top: 20px;  
 }
 
 /*navigation arrows*/
@@ -109,7 +102,7 @@ a:hover {
     line-height: 50px;
     text-align: center;
     font-size: 20px;
-    color: #f03861;
+    color: #F03861;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     cursor: pointer;
@@ -125,7 +118,7 @@ a:hover {
 
 .prev:hover,
 .next:hover {
-    background-color: #faaabc;
+    color: #ED7901;
 }
 
 /*navigation dots*/
@@ -137,11 +130,8 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 200px;
+    width: 160px;
     height: 50px;
-    padding: 0 10px;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .nav i {
@@ -151,5 +141,5 @@ a:hover {
 }
 
 .nav i.active {
-    color: #f03861;
+    color: #ED7901;
 }
