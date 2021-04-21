@@ -15,7 +15,6 @@ const app = new Vue( {
     },
 
     created() {
-        console.log(created);
         this.startLoop();
     },
 

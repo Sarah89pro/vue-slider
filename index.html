@@ -41,13 +41,11 @@
     </header>
 
     <!--APP--> 
-    <section class="Specials">
+    <section class="specials">
         <div id="app">
 
 
             <section class="slider"
-            @mouseenter="stopLoop"
-            @mouseleave="startLoop"
             >
                 <div class="prev" @click="prevPhoto">
                     <i class="fas fa-angle-double-left"></i>
@@ -55,7 +53,10 @@
         
                 <div class="images">
                     <!--<img src="./img/Arroburghini.jpg" alt="">-->
-                    <img :src="photos[indexPhoto]" alt="specialità">
+                    <img :src="photos[indexPhoto]"
+                    @mouseenter="stopLoop"
+                    @mouseleave="startLoop"
+                    alt="specialità">
                 </div>
         
                 <div class="next" @click="nextPhoto">
